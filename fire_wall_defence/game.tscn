@@ -1,8 +1,13 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Tilesheet/simpleSpace_tilesheet.png" type="Texture" id=1]
+[ext_resource path="res://Spritesheet/simpleSpace_sheet.png" type="Texture" id=2]
+[ext_resource path="res://virus 1.tscn" type="PackedScene" id=3]
+[ext_resource path="res://xénon.tscn" type="PackedScene" id=4]
+[ext_resource path="res://trojan.tscn" type="PackedScene" id=5]
 
 [sub_resource type="TileSet" id=1]
+resource_local_to_scene = true
 0/name = "simpleSpace_tilesheet.png 0"
 0/texture = ExtResource( 1 )
 0/tex_offset = Vector2( 0, 0 )
@@ -647,20 +652,95 @@
 45/shape_one_way_margin = 0.0
 45/shapes = [  ]
 45/z_index = 0
+46/name = "simpleSpace_tilesheet.png 46"
+46/texture = ExtResource( 1 )
+46/tex_offset = Vector2( 0, 0 )
+46/modulate = Color( 1, 1, 1, 1 )
+46/region = Rect2( 384, 320, 64, 64 )
+46/tile_mode = 0
+46/occluder_offset = Vector2( 0, 0 )
+46/navigation_offset = Vector2( 0, 0 )
+46/shape_offset = Vector2( 0, 0 )
+46/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+46/shape_one_way = false
+46/shape_one_way_margin = 0.0
+46/shapes = [  ]
+46/z_index = 0
+47/name = "simpleSpace_tilesheet.png 47"
+47/texture = ExtResource( 1 )
+47/tex_offset = Vector2( 0, 0 )
+47/modulate = Color( 1, 1, 1, 1 )
+47/region = Rect2( 448, 320, 64, 64 )
+47/tile_mode = 0
+47/occluder_offset = Vector2( 0, 0 )
+47/navigation_offset = Vector2( 0, 0 )
+47/shape_offset = Vector2( 0, 0 )
+47/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+47/shape_one_way = false
+47/shape_one_way_margin = 0.0
+47/shapes = [  ]
+47/z_index = 0
+48/name = "simpleSpace_tilesheet.png 48"
+48/texture = ExtResource( 1 )
+48/tex_offset = Vector2( 0, 0 )
+48/modulate = Color( 1, 1, 1, 1 )
+48/region = Rect2( 448, 320, 64, 64 )
+48/tile_mode = 0
+48/occluder_offset = Vector2( 0, 0 )
+48/navigation_offset = Vector2( 0, 0 )
+48/shape_offset = Vector2( 0, 0 )
+48/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+48/shape_one_way = false
+48/shape_one_way_margin = 0.0
+48/shapes = [  ]
+48/z_index = 0
+49/name = "simpleSpace_sheet.png 49"
+49/texture = ExtResource( 2 )
+49/tex_offset = Vector2( 0, 0 )
+49/modulate = Color( 1, 1, 1, 1 )
+49/region = Rect2( 320, 256, 64, 64 )
+49/tile_mode = 0
+49/occluder_offset = Vector2( 0, 0 )
+49/navigation_offset = Vector2( 0, 0 )
+49/shape_offset = Vector2( 0, 0 )
+49/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+49/shape_one_way = false
+49/shape_one_way_margin = 0.0
+49/shapes = [  ]
+49/z_index = 0
 
 [node name="Node2D" type="Node2D"]
 
-[node name="TileMap" type="TileMap" parent="."]
+[node name="TileMap4" type="TileMap" parent="."]
 tile_set = SubResource( 1 )
 format = 1
-tile_data = PoolIntArray( 131080, 31, 0, 262151, 0, 0, 327691, 31, 0, 458760, 31, 0, 524294, 37, 0 )
+tile_data = PoolIntArray( 0, 46, 0, 1, 46, 0, 2, 46, 0, 3, 46, 0, 4, 46, 0, 5, 46, 0, 6, 46, 0, 7, 46, 0, 8, 46, 0, 9, 46, 0, 10, 46, 0, 11, 46, 0, 12, 46, 0, 13, 47, 0, 14, 46, 0, 15, 46, 0, 65536, 46, 0, 65537, 46, 0, 65538, 46, 0, 65539, 46, 0, 65540, 46, 0, 65541, 46, 0, 65542, 46, 0, 65543, 46, 0, 65544, 46, 0, 65545, 46, 0, 65546, 46, 0, 65547, 46, 0, 65548, 46, 0, 65549, 47, 0, 65550, 46, 0, 65551, 46, 0, 131072, 46, 0, 131073, 46, 0, 131074, 46, 0, 131075, 46, 0, 131076, 46, 0, 131077, 46, 0, 131078, 46, 0, 131079, 46, 0, 131080, 46, 0, 131081, 46, 0, 131082, 46, 0, 131083, 46, 0, 131084, 46, 0, 131085, 47, 0, 131086, 46, 0, 131087, 46, 0, 196608, 46, 0, 196609, 46, 0, 196610, 46, 0, 196611, 46, 0, 196612, 46, 0, 196613, 46, 0, 196614, 46, 0, 196615, 46, 0, 196616, 46, 0, 196617, 46, 0, 196618, 46, 0, 196619, 46, 0, 196620, 46, 0, 196621, 47, 0, 196622, 46, 0, 196623, 46, 0, 262144, 46, 0, 262145, 46, 0, 262146, 46, 0, 262147, 46, 0, 262148, 46, 0, 262149, 46, 0, 262150, 46, 0, 262151, 46, 0, 262152, 46, 0, 262153, 46, 0, 262154, 46, 0, 262155, 46, 0, 262156, 46, 0, 262157, 47, 0, 262158, 46, 0, 262159, 46, 0, 327680, 46, 0, 327681, 46, 0, 327682, 46, 0, 327683, 46, 0, 327684, 46, 0, 327685, 46, 0, 327686, 46, 0, 327687, 46, 0, 327688, 46, 0, 327689, 46, 0, 327690, 46, 0, 327691, 46, 0, 327692, 46, 0, 327693, 47, 0, 327694, 46, 0, 327695, 46, 0, 393216, 46, 0, 393217, 46, 0, 393218, 46, 0, 393219, 46, 0, 393220, 46, 0, 393221, 46, 0, 393222, 46, 0, 393223, 46, 0, 393224, 46, 0, 393225, 46, 0, 393226, 46, 0, 393227, 46, 0, 393228, 46, 0, 393229, 47, 0, 393230, 46, 0, 393231, 46, 0, 458752, 46, 0, 458753, 46, 0, 458754, 46, 0, 458755, 46, 0, 458756, 46, 0, 458757, 46, 0, 458758, 46, 0, 458759, 46, 0, 458760, 46, 0, 458761, 46, 0, 458762, 46, 0, 458763, 46, 0, 458764, 46, 0, 458765, 47, 0, 458766, 46, 0, 458767, 46, 0, 524288, 46, 0, 524289, 46, 0, 524290, 46, 0, 524291, 46, 0, 524292, 46, 0, 524293, 46, 0, 524294, 46, 0, 524295, 46, 0, 524296, 46, 0, 524297, 46, 0, 524298, 46, 0, 524299, 46, 0, 524300, 46, 0, 524301, 47, 0, 524302, 46, 0, 524303, 46, 0, 589824, 46, 0, 589825, 46, 0, 589826, 46, 0, 589827, 46, 0, 589828, 46, 0, 589829, 46, 0, 589830, 46, 0, 589831, 46, 0, 589832, 46, 0, 589833, 46, 0, 589834, 46, 0, 589835, 46, 0, 589836, 46, 0, 589837, 47, 0, 589838, 46, 0, 589839, 46, 0 )
 
 [node name="TileMap2" type="TileMap" parent="."]
 tile_set = SubResource( 1 )
 format = 1
-tile_data = PoolIntArray( 65539, 32, 0, 131080, 22, 0, 131084, 32, 0, 196612, 32, 0, 262153, 32, 0, 327682, 32, 0, 327691, 21, 0, 393221, 32, 0, 393223, 16, 0, 458760, 20, 0, 458766, 32, 0, 524290, 32, 0 )
+tile_data = PoolIntArray( 5, 43, 0, 8, 43, 0, 14, 11, 0, 65538, 43, 0, 65539, 32, 0, 65550, 12, 0, 131080, 32, 0, 131086, 13, 0, 196608, 43, 0, 196622, 14, 0, 262153, 32, 0, 262158, 15, 0, 327691, 32, 0, 327694, 16, 0, 393216, 43, 0, 393221, 32, 0, 393223, 16, 0, 393230, 17, 0, 458762, 32, 0, 458766, 19, 0, 524289, 43, 0, 524293, 43, 0, 524296, 32, 0, 524299, 43, 0, 524302, 18, 0 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource( 1 )
+format = 1
+tile_data = PoolIntArray( 262150, 29, 0 )
 
 [node name="TileMap3" type="TileMap" parent="."]
 tile_set = SubResource( 1 )
 format = 1
-tile_data = PoolIntArray( 65539, 45, 0, 131084, 45, 0, 196612, 45, 0, 262153, 45, 0, 327682, 45, 0, 393221, 45, 0, 458766, 45, 0, 524290, 45, 0 )
+tile_data = PoolIntArray( 65539, 45, 0, 131080, 13, 0, 262150, 4, 0, 262153, 12, 0, 327691, 14, 0, 393221, 45, 0, 458762, 15, 0, 524296, 12, 0 )
+
+[node name="virus 1" parent="." instance=ExtResource( 3 )]
+position = Vector2( 248, 536 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="trojan" parent="." instance=ExtResource( 5 )]
+position = Vector2( 216, 303 )
+rotation = 1.40848
+scale = Vector2( 0.25, 0.25 )
+
+[node name="xénon" parent="." instance=ExtResource( 4 )]
+position = Vector2( 151, 197 )
+rotation = 1.87972
+scale = Vector2( 0.25, 0.25 )
