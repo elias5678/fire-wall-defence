@@ -3,6 +3,7 @@
 [ext_resource path="res://PNG/Retina/ship_sidesB.png" type="Texture" id=1]
 
 [node name="trojan" type="Node2D"]
+scale = Vector2( 0.5, 0.5 )
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )
