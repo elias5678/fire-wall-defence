@@ -1,7 +1,8 @@
 extends CanvasLayer
 var tower_rang=320
 func set_tower_preview(tower_type,mouse_position):
-	var drag_tower = load("res://turret/"+tower_type+".tscn").instance()
+	
+	var drag_tower = load("res://turret/"+tower_type + ".tscn").instance()
 	drag_tower.set_name("Dragtower")
 	drag_tower.modulate =Color("ad54ff3c")
 	
@@ -27,3 +28,7 @@ func update_tower_preview(new_position,color):
 		if get_node("towerpreview/Dragtower").modulate!=Color(color):
 			get_node("towerpreview/Dragtower").modulate=Color(color)
 			get_node("towerpreview/Sprite").modulate=Color(color)
+
+
+func _on_Button3_pressed():
+	get_tree().quit();
